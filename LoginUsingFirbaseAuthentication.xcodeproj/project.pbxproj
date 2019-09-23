@@ -15,6 +15,10 @@
 		8AFC3FE62339086400C47472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC3FE42339086400C47472 /* LaunchScreen.storyboard */; };
 		8AFC3FF12339086400C47472 /* LoginUsingFirbaseAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC3FF02339086400C47472 /* LoginUsingFirbaseAuthenticationTests.swift */; };
 		8AFC3FFC2339086400C47472 /* LoginUsingFirbaseAuthenticationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC3FFB2339086400C47472 /* LoginUsingFirbaseAuthenticationUITests.swift */; };
+		8AFC400A233908A000C47472 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC4009233908A000C47472 /* SignUpViewController.swift */; };
+		8AFC400C233908B900C47472 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC400B233908B900C47472 /* LoginViewController.swift */; };
+		8AFC400E233908C900C47472 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC400D233908C900C47472 /* HomeViewController.swift */; };
+		8AFC401223391DC300C47472 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC401123391DC300C47472 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		8AFC3FF72339086400C47472 /* LoginUsingFirbaseAuthenticationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginUsingFirbaseAuthenticationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFC3FFB2339086400C47472 /* LoginUsingFirbaseAuthenticationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsingFirbaseAuthenticationUITests.swift; sourceTree = "<group>"; };
 		8AFC3FFD2339086400C47472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFC4009233908A000C47472 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8AFC400B233908B900C47472 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8AFC400D233908C900C47472 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8AFC401123391DC300C47472 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,9 @@
 		8AFC3FD72339086100C47472 /* LoginUsingFirbaseAuthentication */ = {
 			isa = PBXGroup;
 			children = (
+				8AFC401023391D9500C47472 /* Helpers */,
+				8AFC400F233908D400C47472 /* Controllers */,
 				8AFC3FD82339086100C47472 /* AppDelegate.swift */,
-				8AFC3FDA2339086100C47472 /* ViewController.swift */,
 				8AFC3FDC2339086100C47472 /* Main.storyboard */,
 				8AFC3FE22339086400C47472 /* Assets.xcassets */,
 				8AFC3FE42339086400C47472 /* LaunchScreen.storyboard */,
@@ -126,6 +135,25 @@
 				8AFC3FFD2339086400C47472 /* Info.plist */,
 			);
 			path = LoginUsingFirbaseAuthenticationUITests;
+			sourceTree = "<group>";
+		};
+		8AFC400F233908D400C47472 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC4009233908A000C47472 /* SignUpViewController.swift */,
+				8AFC400B233908B900C47472 /* LoginViewController.swift */,
+				8AFC400D233908C900C47472 /* HomeViewController.swift */,
+				8AFC3FDA2339086100C47472 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8AFC401023391D9500C47472 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC401123391DC300C47472 /* Utilities.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +289,11 @@
 			files = (
 				8AFC3FDB2339086100C47472 /* ViewController.swift in Sources */,
 				8AFC3FE12339086100C47472 /* LoginUsingFirbaseAuthentication.xcdatamodeld in Sources */,
+				8AFC401223391DC300C47472 /* Utilities.swift in Sources */,
+				8AFC400A233908A000C47472 /* SignUpViewController.swift in Sources */,
+				8AFC400C233908B900C47472 /* LoginViewController.swift in Sources */,
 				8AFC3FD92339086100C47472 /* AppDelegate.swift in Sources */,
+				8AFC400E233908C900C47472 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginUsingFirbaseAuthentication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginUsingFirbaseAuthentication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
